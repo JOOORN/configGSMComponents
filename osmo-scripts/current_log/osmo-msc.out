@@ -1,0 +1,12 @@
+ERROR: ld.so: object '/n/git/udtrace/libudtrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/usr/lib/titan/libttcn3-dynamic.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+<0006> msc_main.c:565 Failed to parse the config file: 'osmo-msc.cfg'
+
+=================================================================
+==34555==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 316 byte(s) in 3 object(s) allocated from:
+    #0 0x7f718248d887 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7f7182095d7f  (/lib/x86_64-linux-gnu/libtalloc.so.2+0x4d7f)
+
+SUMMARY: AddressSanitizer: 316 byte(s) leaked in 3 allocation(s).
